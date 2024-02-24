@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="4" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-02-23T21:21:19 IST" name="Default suite" finished-at="2024-02-23T21:21:19 IST" duration-ms="140">
+    <groups>
+    </groups>
+    <test started-at="2024-02-23T21:21:19 IST" name="Sanity" finished-at="2024-02-23T21:21:19 IST" duration-ms="140">
+      <class name="TestNg_Basics.Demo">
+        <test-method signature="Login(java.lang.String,java.lang.String)[pri:0, instance:TestNg_Basics.Demo@618b19ad]" started-at="2024-02-23T21:21:19 IST" name="Login" data-provider="Data" finished-at="2024-02-23T21:21:19 IST" duration-ms="13" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Kavya]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Infosys123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+      </class> <!-- TestNg_Basics.Demo -->
+      <class name="TestNg_Basics.Demo4">
+        <test-method signature="Post()[pri:0, instance:TestNg_Basics.Demo4@62379589]" started-at="2024-02-23T21:21:19 IST" name="Post" finished-at="2024-02-23T21:21:19 IST" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Post -->
+      </class> <!-- TestNg_Basics.Demo4 -->
+      <class name="TestNg_Basics.Demo2">
+        <test-method signature="HomePage()[pri:0, instance:TestNg_Basics.Demo2@13c9d689]" started-at="2024-02-23T21:21:19 IST" name="HomePage" finished-at="2024-02-23T21:21:19 IST" duration-ms="38" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Facebook] but found [FaceBook]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Facebook] but found [FaceBook]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at TestNg_Basics.Demo2.HomePage(Demo2.java:21)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1623)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomePage -->
+        <test-method signature="LogOutPage()[pri:0, instance:TestNg_Basics.Demo2@13c9d689]" started-at="2024-02-23T21:21:19 IST" name="LogOutPage" finished-at="2024-02-23T21:21:19 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogOutPage -->
+        <test-method signature="LoginPage()[pri:0, instance:TestNg_Basics.Demo2@13c9d689]" started-at="2024-02-23T21:21:19 IST" name="LoginPage" finished-at="2024-02-23T21:21:19 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginPage -->
+      </class> <!-- TestNg_Basics.Demo2 -->
+      <class name="TestNg_Basics.Demo3">
+        <test-method signature="Login(java.lang.String,java.lang.String)[pri:0, instance:TestNg_Basics.Demo3@3754a4bf]" started-at="2024-02-23T21:21:19 IST" name="Login" finished-at="2024-02-23T21:21:19 IST" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Cannot inject @Test annotated Method [Login] with [class java.lang.String, class java.lang.String].
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Cannot inject @Test annotated Method [Login] with [class java.lang.String, class java.lang.String].
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:436)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:350)
+at org.testng.internal.Parameters.createParameters(Parameters.java:693)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:879)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
+at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:911)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1623)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+      </class> <!-- TestNg_Basics.Demo3 -->
+    </test> <!-- Sanity -->
+  </suite> <!-- Default suite -->
+</testng-results>
