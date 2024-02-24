@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class Demo {
 	
 	
-    @Test(dataProvider="Data")
+    @Test
 	public void Login(String Username,String Password)
 	{
 		System.out.println(Username);
